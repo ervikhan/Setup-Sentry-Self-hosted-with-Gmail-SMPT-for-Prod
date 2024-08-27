@@ -1,5 +1,6 @@
 <h1> Setup </h1>
 <h2>Install Docker</h2>
+
 1. Update repos
     
     ```yaml
@@ -44,6 +45,7 @@
 
 <h2>Install Sentry Self-hosted</h2>
 <b>This is from official docs sentry self-hosted</b>
+
 1. Run Installation
     
     ```yaml
