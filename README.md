@@ -1,44 +1,42 @@
 <h1> Setup </h1>
-<hr>
 <h2>Install Docker</h2>
-<br>
-- Update repos
+1. Update repos
     
     ```yaml
     apt update
     ```
     
-- Install dependency packages
+2. Install dependency packages
     
     ```yaml
     apt install apt-transport-https ca-certificates curl software-properties-common
     ```
     
-- Add gpg keys
+3. Add gpg keys
     
     ```yaml
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
     ```
     
-- Add docker repos
+4. Add docker repos
     
     ```yaml
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     ```
     
-- Update repos
+5. Update repos
     
     ```yaml
     apt update
     ```
     
-- Install Docker ce
+6. Install Docker ce
     
     ```yaml
     apt install docker-ce -y
     ```
     
-- Start service
+7. Start service
     
     ```yaml
     service docker start
@@ -46,13 +44,12 @@
 
 <h2>Install Sentry Self-hosted</h2>
 <b>This is from official docs sentry self-hosted</b>
-<br>
-1. Clone Repository
+1. Run Installation
     
     ```yaml
     git clone https://github.com/getsentry/self-hosted
     ```
-    
+
 2. Run Installation
     
     ```yaml
